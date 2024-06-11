@@ -21,7 +21,7 @@
 
 |HTML|CSS|JavaScript|React|Java|
 |:-:|:-:|:-:|:-:|:-:|
-|![image](https://github.com/LamdaLee/front/assets/172228499/024b4ff4-822c-4298-8412-4e9fb8ae3ca1)|![image](https://github.com/LamdaLee/front/assets/172228499/07df1c1f-d1c9-49a1-8290-87e424064936)|![image](https://github.com/LamdaLee/front/assets/172228499/a1f9b5b5-f43d-4ef6-a389-81df57809bf1)|![image](https://github.com/LamdaLee/front/assets/172228499/d59b6ff6-aa64-427b-9932-e42b75db184e)|![image](https://github.com/LamdaLee/front/assets/172228499/8bbaf0cb-4d0e-492e-8840-6dcf419b3725)|
+|![image](https://github.com/LamdaLee/LamdaLee/assets/172228499/e98012d0-4740-42f8-98e5-de316504b84b)|![image](https://github.com/LamdaLee/LamdaLee/assets/172228499/066137f9-18e0-4fcd-94b4-7cc6c373b614)|![image](https://github.com/LamdaLee/LamdaLee/assets/172228499/effb3abc-12da-4ee8-baa2-57c0fec89dd5)|![image](https://github.com/LamdaLee/LamdaLee/assets/172228499/18daeb5f-ffc3-48ca-972a-d2bb250f29f9)|![image](https://github.com/LamdaLee/LamdaLee/assets/172228499/a90bb90a-65c4-4e8b-a613-9dc094edd90c)|
 
 ## ✨ 개발 환경
 
