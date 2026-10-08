@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070d18"/>
+      <stop offset="55%" stop-color="#0b1426"/>
+      <stop offset="100%" stop-color="#1a2740"/>
+    </linearGradient>
+    <radialGradient id="nebula" cx="75%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#d4785c" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#e0a35c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#0b1426" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#nebula)"/>
+  <g fill="#f4ebe0" opacity="0.8">
+    <circle cx="180" cy="120" r="2"/>
+    <circle cx="260" cy="200" r="1.5"/>
+    <circle cx="420" cy="90" r="2"/>
+    <circle cx="980" cy="140" r="2"/>
+    <circle cx="1080" cy="260" r="1.5"/>
+    <circle cx="900" cy="400" r="2"/>
+  </g>
+  <g stroke="#e0a35c" stroke-width="2" fill="none" opacity="0.7">
+    <path d="M820 360 L880 300 L940 330 L1000 240 L1060 210"/>
+  </g>
+  <circle cx="1000" cy="240" r="7" fill="#f0b96a"/>
+  <text x="80" y="280" fill="#f4ebe0" font-family="Georgia, serif" font-size="96" font-weight="700">Lamda</text>
+  <text x="80" y="360" fill="#e8dccf" font-family="Georgia, serif" font-size="42">AI| }à · àtà · ð” •</text>
+  <text x="80" y="520" fill="#e0a35c" font-family="system-ui, sans-serif" font-size="28">Shaula · shaula.kr</text>
+</svg>

@@ -1,0 +1,37 @@
+.footer {
+  margin-top: var(--space-9);
+  border-top: 1px solid var(--border);
+  padding: var(--space-7) 0 var(--space-6);
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.story {
+  max-width: 28rem;
+}
+
+.story strong {
+  color: var(--cream-soft);
+  font-weight: 600;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.meta a {
+  text-decoration: none;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+.panel {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  max-width: 28rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.hint {
+  margin: 0 0 1rem;
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.input {
+  flex: 1 1 12rem;
+  min-width: 0;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--ink-800);
+  color: var(--fg);
+  font: inherit;
+}
+
+.status {
+  margin-top: 0.75rem;
+  font-size: 0.88rem;
+  color: var(--fg-muted);
+}

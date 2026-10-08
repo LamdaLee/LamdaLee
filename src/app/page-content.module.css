@@ -1,0 +1,33 @@
+.page {
+  padding: var(--space-8) 0 var(--space-7);
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--accent);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.title {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+}
+
+.lede {
+  margin: 0 0 0.5rem;
+  max-width: 36rem;
+  color: var(--fg-muted);
+}
+
+.body {
+  color: var(--cream-soft);
+}
+
+.body ul {
+  padding-left: 1.2rem;
+}
+
+.body li + li {
+  margin-top: 0.45rem;
+}
