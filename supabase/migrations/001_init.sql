@@ -1,4 +1,4 @@
--- Lamda / Shaula MVP: auth-backed learn progress & submissions
+-- Shaula MVP: auth-backed learn progress & submissions
 -- Apply in Supabase SQL editor or via supabase db push
 
 create extension if not exists "pgcrypto";

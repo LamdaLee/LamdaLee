@@ -31,7 +31,7 @@ export default async function ChallengePage({ params }: Props) {
   return (
     <div className={`shell ${learnStyles.unitPage}`}>
       <Link href="/learn" className={learnStyles.back}>
-        ← Shaula 목록
+        ← 배우기 목록
       </Link>
       <h1 className={learnStyles.unitTitle}>{unit.title}</h1>
       <ChallengePlayer unit={unit} />

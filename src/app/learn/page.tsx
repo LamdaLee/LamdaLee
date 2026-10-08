@@ -7,8 +7,8 @@ import styles from "../page-content.module.css";
 import learnStyles from "./learn.module.css";
 
 export const metadata: Metadata = {
-  title: siteConfig.learnBrand,
-  description: "AI 리터러시 챌린지 유닛 목록 — Shaula by Lamda.",
+  title: "배우기",
+  description: `AI 리터러시 챌린지 유닛 목록 — ${siteConfig.name}.`,
 };
 
 export default function LearnPage() {
@@ -16,7 +16,7 @@ export default function LearnPage() {
 
   return (
     <div className={`shell ${styles.page}`}>
-      <p className={styles.eyebrow}>{siteConfig.learnBrand}</p>
+      <p className={styles.eyebrow}>배우기</p>
       <h1 className={styles.title}>문제 단위로 익히는 AI 리터러시</h1>
       <p className={styles.lede}>
         영상 덤프가 아니라 Problem → Explore → Decide → Reflect. 객관식은 즉시

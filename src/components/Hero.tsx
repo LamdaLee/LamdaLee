@@ -38,15 +38,6 @@ function ShaulaConstellation() {
           opacity={i === 4 ? 1 : 0.85}
         />
       ))}
-      <text
-        x="288"
-        y="108"
-        fill="#f0b96a"
-        fontSize="14"
-        fontFamily="var(--font-body), sans-serif"
-      >
-        Shaula
-      </text>
     </svg>
   );
 }
@@ -61,21 +52,21 @@ export function Hero() {
       </div>
       <div className={styles.content}>
         <p id="hero-brand" className={styles.brand}>
-          Lam<span className={styles.brandAccent}>da</span>
+          Shau<span className={styles.brandAccent}>la</span>
         </p>
         <h1 className={styles.headline}>
           AI를 읽고, 고르고, 쓰는 법을 문제 단위로.
         </h1>
         <p className={styles.lede}>
-          포트폴리오와 Shaula 학습 공간이 한곳에 있습니다. 강의 나열이 아니라,
-          짧은 판단 연습으로 AI 리터러시 문턱을 낮춥니다.
+          포트폴리오와 학습이 한곳에 있습니다. 강의 나열이 아니라, 짧은 판단
+          연습으로 AI 리터러시 문턱을 낮춥니다.
         </p>
         <div className="btn-group">
           <Link className="btn" href="/learn/slack-ai-summary">
             첫 챌린지 시작
           </Link>
           <Link className="btn btn-ghost" href="/about">
-            Lamda 소개
+            만든 사람
           </Link>
         </div>
       </div>

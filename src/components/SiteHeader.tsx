@@ -7,7 +7,7 @@ import styles from "./SiteHeader.module.css";
 const links = [
   { href: "/about", label: "소개" },
   { href: "/work", label: "작업" },
-  { href: "/learn", label: "Shaula" },
+  { href: "/learn", label: "배우기" },
   { href: "/contact", label: "연락" },
 ] as const;
 
@@ -18,7 +18,7 @@ export function SiteHeader() {
     <header className={styles.header}>
       <div className={`shell ${styles.inner}`}>
         <Link href="/" className={styles.brand}>
-          Lam<span className={styles.brandMark}>da</span>
+          Shau<span className={styles.brandMark}>la</span>
         </Link>
         <nav className={styles.nav} aria-label="주요">
           {links.map((link) => {

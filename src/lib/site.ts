@@ -1,10 +1,10 @@
 export const siteConfig = {
-  name: "Lamda",
-  learnBrand: "Shaula",
+  name: "Shaula",
+  person: "Lamda",
   storyName: "Lambdascorpii",
   domain: "shaula.kr",
   description:
-    "AI를 읽고·고르고·쓰는 법을 문제 단위로 익히는 Lamda의 개인 홈과 Shaula 학습 공간.",
+    "AI를 읽고·고르고·쓰는 법을 문제 단위로 익히는 Shaula — Lamda의 학습·포트폴리오 공간.",
   locale: "ko_KR",
   links: {
     email: "hello@shaula.kr",

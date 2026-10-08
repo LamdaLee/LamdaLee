@@ -5,12 +5,12 @@ import workStyles from "./work.module.css";
 
 export const metadata: Metadata = {
   title: "작업",
-  description: "Lamda의 프로젝트 하이라이트 (초안 플레이스홀더).",
+  description: "Shaula 프로젝트 하이라이트 (초안 플레이스홀더).",
 };
 
 const cases = [
   {
-    title: "Shaula 학습 루프",
+    title: "학습 루프",
     role: "제품 · 콘텐츠",
     blurb:
       "Problem → Explore → Decide → Reflect. AI 리터러시를 문제 단위로 연습하는 작은 학습 공간.",

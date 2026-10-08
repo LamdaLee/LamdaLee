@@ -4,7 +4,7 @@ import styles from "../page-content.module.css";
 
 export const metadata: Metadata = {
   title: "연락",
-  description: "Lamda에게 연락하기.",
+  description: `${siteConfig.person}에게 연락하기.`,
 };
 
 export default function ContactPage() {
@@ -17,8 +17,9 @@ export default function ContactPage() {
       </h1>
       <div className={`prose ${styles.body}`}>
         <p>
-          협업·채용·학습 공간 피드백은 아래로 보내 주세요. (채널 우선순위는 아직
-          확정 전이라 플레이스홀더입니다.)
+          <strong>{siteConfig.name}</strong>를 만든{" "}
+          <strong>{siteConfig.person}</strong>에게 협업·채용·학습 공간 피드백을
+          보내 주세요. (채널 우선순위는 아직 확정 전이라 플레이스홀더입니다.)
         </p>
         <ul>
           <li>

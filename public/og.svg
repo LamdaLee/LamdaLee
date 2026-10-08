@@ -25,7 +25,7 @@
     <path d="M820 360 L880 300 L940 330 L1000 240 L1060 210"/>
   </g>
   <circle cx="1000" cy="240" r="7" fill="#f0b96a"/>
-  <text x="80" y="280" fill="#f4ebe0" font-family="Georgia, serif" font-size="96" font-weight="700">Lamda</text>
-  <text x="80" y="360" fill="#e8dccf" font-family="Georgia, serif" font-size="42">AI| }à · àtà · ð” •</text>
-  <text x="80" y="520" fill="#e0a35c" font-family="system-ui, sans-serif" font-size="28">Shaula · shaula.kr</text>
+  <text x="80" y="280" fill="#f4ebe0" font-family="Georgia, serif" font-size="96" font-weight="700">Shaula</text>
+  <text x="80" y="360" fill="#e8dccf" font-family="Georgia, serif" font-size="40">Read · Choose · Write with AI</text>
+  <text x="80" y="520" fill="#e0a35c" font-family="system-ui, sans-serif" font-size="28">shaula.kr · by Lamda</text>
 </svg>

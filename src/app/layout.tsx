@@ -22,7 +22,7 @@ const noto = Noto_Sans_KR({
 export const metadata: Metadata = {
   metadataBase: new URL(absoluteUrl("/")),
   title: {
-    default: `${siteConfig.name} · ${siteConfig.learnBrand}`,
+    default: siteConfig.name,
     template: `%s · ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -31,20 +31,20 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: absoluteUrl("/"),
     siteName: siteConfig.name,
-    title: `${siteConfig.name} · ${siteConfig.learnBrand}`,
+    title: siteConfig.name,
     description: siteConfig.description,
     images: [
       {
         url: "/og.svg",
         width: 1200,
         height: 630,
-        alt: `${siteConfig.name} — ${siteConfig.learnBrand}`,
+        alt: siteConfig.name,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} · ${siteConfig.learnBrand}`,
+    title: siteConfig.name,
     description: siteConfig.description,
     images: ["/og.svg"],
   },

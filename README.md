@@ -1,7 +1,8 @@
-# Lamda · Shaula
+# Shaula
 
-Lamda의 개인 홈과 AI 리터러시 학습 공간 **Shaula** (`/learn`).  
-도메인 목표: **shaula.kr** (apex only). 콘텐츠 언어: 한국어.
+**Shaula** — AI 리터러시 학습·포트폴리오 사이트 (`shaula.kr`).  
+만든 사람: **Lamda**. 스토리 이름: **Lambdascorpii** (about/푸터 내러티브만).  
+학습 경로: `/learn` (같은 Shaula 브랜드). 콘텐츠 언어: 한국어.
 
 스택: **Next.js (App Router) + TypeScript + MDX + Vercel**, 진행/인증은 **Supabase**.
 
@@ -57,14 +58,14 @@ npm run dev
 
 | 경로 | 내용 |
 |------|------|
-| `/` | Lamda 히어로 + CTA |
-| `/about` | 소개 · Shaula / Lambdascorpii 스토리 (초안) |
+| `/` | Shaula 히어로 + CTA |
+| `/about` | 만든 사람 Lamda · Lambdascorpii 스토리 (초안) |
 | `/work` | 케이스 ≤3 (플레이스홀더) |
 | `/learn` | 챌린지 목록 + 매직 링크 패널 |
 | `/learn/[slug]` | Problem → Explore → Decide → Reflect |
-| `/contact` | 연락 (플레이스홀더) |
+| `/contact` | 연락 — Lamda에게 (플레이스홀더) |
 
 ## 제품 의도
 
-플랜: 포트폴리오와 문제 단위 AI 리터러시 학습을 한 사이트에.  
-브랜드: 사이트 **Lamda**, 학습 **Shaula**, 스토리명 **Lambdascorpii**(about/푸터만).
+포트폴리오와 문제 단위 AI 리터러시 학습을 한 사이트에.  
+브랜드: 사이트 **Shaula**, 사람 **Lamda**, 스토리명 **Lambdascorpii**(about/푸터만).
