@@ -1,0 +1,235 @@
+:root {
+  /* Shaula palette — deep navy + warm amber/coral */
+  --ink-950: #070d18;
+  --ink-900: #0b1426;
+  --ink-800: #121c31;
+  --ink-700: #1a2740;
+  --mist: #c9d0dc;
+  --cream: #f4ebe0;
+  --cream-soft: #e8dccf;
+  --amber: #e0a35c;
+  --amber-bright: #f0b96a;
+  --coral: #d4785c;
+  --coral-deep: #b85a42;
+  --star: #f7efe4;
+
+  --bg: var(--ink-900);
+  --bg-elevated: var(--ink-800);
+  --fg: var(--cream);
+  --fg-muted: color-mix(in srgb, var(--cream) 68%, var(--mist));
+  --accent: var(--amber);
+  --accent-hot: var(--coral);
+  --border: color-mix(in srgb, var(--cream) 14%, transparent);
+  --focus: var(--amber-bright);
+
+  --font-display: var(--font-nanum), "Nanum Myeongjo", "Noto Serif KR", serif;
+  --font-body: var(--font-noto), "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --measure: 38rem;
+  --shell: 70rem;
+  --radius: 0.35rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-med: 420ms;
+  --dur-slow: 8s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--fg);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 80% 50% at 70% -10%, color-mix(in srgb, var(--coral) 18%, transparent), transparent 55%),
+    radial-gradient(ellipse 60% 40% at 10% 20%, color-mix(in srgb, var(--amber) 12%, transparent), transparent 50%),
+    linear-gradient(165deg, var(--ink-950) 0%, var(--ink-900) 45%, #101a2c 100%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  text-underline-offset: 0.22em;
+  transition: color var(--dur-fast) var(--ease-out), text-decoration-color var(--dur-fast) var(--ease-out);
+}
+
+a:hover {
+  color: var(--amber-bright);
+  text-decoration-color: var(--amber-bright);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.shell {
+  width: min(100% - 2rem, var(--shell));
+  margin-inline: auto;
+}
+
+.prose {
+  max-width: var(--measure);
+}
+
+.prose p + p {
+  margin-top: 1em;
+}
+
+.draft-label {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--fg-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+/* CTA motion */
+.btn {
+  --btn-bg: var(--accent);
+  --btn-fg: var(--ink-950);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.35rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background: var(--amber-bright);
+  color: var(--ink-950);
+  text-decoration: none;
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn-ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--cream);
+  border-color: color-mix(in srgb, var(--cream) 28%, transparent);
+}
+
+.btn-ghost:hover {
+  background: color-mix(in srgb, var(--cream) 8%, transparent);
+  color: var(--cream);
+  border-color: color-mix(in srgb, var(--amber) 55%, transparent);
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.link-warm {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+
+/* Step transition */
+.step-enter {
+  animation: stepFade 420ms var(--ease-out);
+}
+
+@keyframes stepFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .btn:hover {
+    transform: none;
+  }
+}
