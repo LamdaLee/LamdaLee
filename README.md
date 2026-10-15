@@ -1,71 +1,29 @@
-# Shaula
+# 안녕하세요, 샤울라(Shaula)입니다 ✦
 
-**Shaula** — AI 리터러시 학습·포트폴리오 사이트 (`shaula.kr`).  
-만든 사람: **Lamda**. 스토리 이름: **Lambdascorpii** (about/푸터 내러티브만).  
-학습 경로: `/learn` (같은 Shaula 브랜드). 콘텐츠 언어: 한국어.
+**어려운 기술을 쉽게 풀고, 필요한 도구를 직접 만듭니다.**
 
-스택: **Next.js (App Router) + TypeScript + MDX + Vercel**, 진행/인증은 **Supabase**.
+교육 운영 매니저로 일하며, AI와 함께 작은 웹앱을 만듭니다.
+익숙한 경험으로 기술을 설명하고, 직접 만들면서 배운 것을 짧은 콘텐츠와 실습으로 나눕니다.
 
-## 로컬 실행
+🌐 **[shaula.kr](https://shaula.kr)** · ✉️ [lamda@shaula.kr](mailto:lamda@shaula.kr)
 
-```bash
-npm install
-cp .env.example .env.local   # 선택 — 없어도 정적 페이지·챌린지 플레이 가능
-npm run dev
-```
+## 만드는 것들
 
-- 앱: [http://localhost:3000](http://localhost:3000)
-- 빌드 확인: `npm run build && npm start`
+| 프로젝트 | 한 줄 소개 | 보기 | 소스 |
+| --- | --- | --- | --- |
+| **Pause & Ponder** | 적고, 멈추고, 되돌아보기. 감정과 소비를 돌아보는 개인 보조 도구 | [앱](https://getpauseponder.com) · [소개](https://shaula.kr/case/pause-ponder) | [PP](https://github.com/LamdaLee/PP) |
+| **별이음** | 흩어진 생각을 카드로 잇고, 제작 요청문과 작은 실험으로 이어가는 도구 | [앱](https://byeolieum.vercel.app) · [소개](https://shaula.kr/case/byeolieum) | [Byeolieum](https://github.com/LamdaLee/Byeolieum) |
+| **책상 위** | 내담자의 장면에서 시작해 직업상담 이론을 익히는 작은 상담실 | [앱](https://shaula.kr/edu) · [소개](https://shaula.kr/case/edu) | [career-counselor-desk](https://github.com/LamdaLee/career-counselor-desk) |
+| **출결 기록** | 교육생이 입·퇴실을 직접 남기는 교육 운영 도구 | [가상 데이터 체험판](https://shaula.kr/case/attendance#demo) | 비공개 (개인정보 보호) |
 
-## 환경 변수
+전체 프로젝트와 제작 노트는 **[shaula.kr/case](https://shaula.kr/case)** 에서 볼 수 있습니다.
+이 프로필에 소개한 사이트의 소스는 [LamdaLee/Shaula](https://github.com/LamdaLee/Shaula)에 있습니다.
 
-| 변수 | 필수 | 설명 |
-|------|------|------|
-| `NEXT_PUBLIC_SUPABASE_URL` | 진행 저장 시 | Supabase 프로젝트 URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | 진행 저장 시 | anon public key |
-| `NEXT_PUBLIC_SITE_URL` | 권장 | 매직 링크·OG용 absolute URL (로컬: `http://localhost:3000`) |
+## 일하는 방식
 
-키가 없거나 placeholder면 사이트는 빌드·실행되고, 챌린지 루프(즉시 피드백)는 클라이언트에서 동작합니다. 로그인/DB 저장만 비활성입니다.
+AI가 제안하고, 사람이 선택하고 확인합니다.
+실제 동작과 확인 기준에 비춰 결과를 고치고, 그 과정을 제작 노트로 남깁니다.
 
-## Supabase 설정
+---
 
-1. [Supabase](https://supabase.com) 프로젝트 생성
-2. Authentication → Providers → Email (매직 링크) 활성화
-3. Authentication → URL configuration에 Redirect URL 추가  
-   - `http://localhost:3000/auth/callback`  
-   - `https://shaula.kr/auth/callback`
-4. SQL Editor에서 `supabase/migrations/001_init.sql` 실행  
-   - 테이블: `learn_progress`, `learn_submissions` (+ RLS)
-5. Project Settings → API 값을 `.env.local` / Vercel env에 입력
-
-## 콘텐츠 (MDX)
-
-챌린지 유닛: `content/learn/*.mdx`
-
-- frontmatter: `title`, `summary`, `level`, `track`, `estimatedMinutes`, `decidePrompt`, `options`, `recommendedNext`, `draft`
-- 본문 섹션: `## Problem`, `## Explore`, `## Reflect`
-- Decide는 객관식 + **즉시 피드백** (클라이언트)
-
-## Vercel + shaula.kr
-
-1. GitHub 레포를 Vercel에 import
-2. Framework preset: Next.js
-3. Environment Variables에 Supabase·`NEXT_PUBLIC_SITE_URL=https://shaula.kr` 설정
-4. Domains에 `shaula.kr` (및 www→apex 리다이렉트 권장) 연결
-5. 학습 경로는 서브도메인 없이 **`/learn`**
-
-## 페이지
-
-| 경로 | 내용 |
-|------|------|
-| `/` | Shaula 히어로 + CTA |
-| `/about` | 만든 사람 Lamda · Lambdascorpii 스토리 (초안) |
-| `/work` | 케이스 ≤3 (플레이스홀더) |
-| `/learn` | 챌린지 목록 + 매직 링크 패널 |
-| `/learn/[slug]` | Problem → Explore → Decide → Reflect |
-| `/contact` | 연락 — Lamda에게 (플레이스홀더) |
-
-## 제품 의도
-
-포트폴리오와 문제 단위 AI 리터러시 학습을 한 사이트에.  
-브랜드: 사이트 **Shaula**, 사람 **Lamda**, 스토리명 **Lambdascorpii**(about/푸터만).
+<sub>Shaula는 전갈자리의 별 이름입니다. 흩어진 생각을 연결하고, 복잡한 기술을 이해할 수 있는 길로 풀어내고 싶은 마음을 담았습니다.</sub>
