@@ -17,7 +17,6 @@
 | **출결 기록** | 교육생이 입·퇴실을 직접 남기는 교육 운영 도구 | [가상 데이터 체험판](https://shaula.kr/case/attendance#demo) | 비공개 (개인정보 보호) |
 
 전체 프로젝트와 제작 노트는 **[shaula.kr/case](https://shaula.kr/case)** 에서 볼 수 있습니다.
-이 프로필에 소개한 사이트의 소스는 [LamdaLee/Shaula](https://github.com/LamdaLee/Shaula)에 있습니다.
 
 ## 일하는 방식
 
